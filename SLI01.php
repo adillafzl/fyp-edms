@@ -89,10 +89,10 @@ APPLICATION FOR INDUSTRIAL TRAINING PLACEMENT
 
 <div class="title" style="text-align: left;">
 <p>
-NAME OF STUDENT		: «Nama»
-NRIC 				: «No_Kad_Pengenalan»
-UITM STUDENT NO 		: «No_Pelajar»
-TRAINING SESSION		: SEPTEMBER 2020 – FEBRUARY 2021
+NAME OF STUDENT		:  <?php echo nl2br($name); ?> <br>
+NRIC 				:  <?php echo nl2br($nric); ?> <br>
+UITM STUDENT NO 		:  <?php echo nl2br($studid); ?> <br>
+TRAINING SESSION		:  <?php echo nl2br($start); ?> –  <?php echo nl2br($end); ?> <br>
 </p>
 </div>
 <br>
@@ -106,8 +106,8 @@ UiTM Cawangan Melaka Kampus Jasin.
 
 <div class="note" style="text-align: left;">
 3.  In partial fulfillment of the requirements for the curriculum, it is compulsory for the student to undergo 
-an Industrial training within the duration of 20 weeks. The training is expected to begin on 28th SEPTEMBER 2020 
-until 12th FEBRUARY 2021.
+an Industrial training within the duration of 20 weeks. The training is expected to begin on <?php echo nl2br($start); ?> 
+until <?php echo nl2br($end); ?>.
 </div>
 <br>
 
@@ -124,7 +124,7 @@ any formal consent from your organisation.
 Please send a copy of confirmation letter of employment/mail to UiTM upon the internship offer has accepted by student before 10th SEPTEMBER 2020.
 </div>
 <br>
-
+<br>
 <div class="note" style="text-align: left;">
 Thank you.
 

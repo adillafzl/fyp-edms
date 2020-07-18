@@ -84,10 +84,10 @@ PENERIMAAN TAWARAN MENJALANI LATIHAN INDUSTRI
 
 <div class="title" style="text-align: left;">
 <p>
-NAMA PELAJAR		: 
-NO UITM				: 
-PROGRAM 		    : 
-INSTITUSI		    :   
+NAMA PELAJAR		: <?php echo nl2br($name); ?> <br>
+NO UITM				: <?php echo nl2br($studid); ?> <br>
+PROGRAM 		    : <?php echo nl2br($program); ?> <br>
+INSTITUSI		    : <?php echo nl2br($uni); ?> <br>
 </p>
 </div>
 <br>
@@ -98,12 +98,15 @@ Dengan hormatnya perkara di atas dirujuk.
 <br>
 
 <div class="note" style="text-align: left;">
-2.	Sukacita dimaklumkan pelajar bernama NUR AQILAH NAJWA BINTI SAMLAN,(No K/P 970902-14-5338) telah menerima tawaran sebagai pelatih industri dengan 
+2.	Sukacita dimaklumkan pelajar bernama <?php echo nl2br($name); ?>,<?php echo nl2br($nric); ?> telah menerima tawaran sebagai pelatih industri dengan 
 butiran seperti berikut :
+</div>
+<br>
 
-TEMPAT LATIHAN      : 		
-TARIKH LATIHAN      : 		
-TARIKH LAPOR DIRI   :	
+<div class="note" style="text-align: left;">
+TEMPAT LATIHAN      : <?php echo nl2br($place); ?> <br>		
+TARIKH LATIHAN      : <?php echo nl2br($datea); ?> <br>		
+TARIKH LAPOR DIRI   : <?php echo nl2br($dateb); ?> <br>	
 </div>
 <br>
 
