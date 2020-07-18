@@ -183,49 +183,28 @@
               <div class="table-title">
                   <div class="row">
                       <div class="col-sm-6">
-              <h2>New</h2>
-            </div>
-            <div class="col-sm-6">
-              <a href="<?php echo site_url('blanktemps') ?>" class="btn btn-success" data-toggle="modal"><i class="material-icons"></i> <span>Blank Template</span></a>
-            </div>
+              <h2>Surat Latihan Industri</h2>
+                      </div>
                   </div>
-              </div>
-              <table class="table table-striped table-hover">
-                  
-              <form action="<?php echo site_url('Newpage/insert');?>" method="post">
-
-                Document Name : <input type="text" name="docname" placeholder="Insert document's name"> <cd/>
-                    <input type="submit" name="addnew" class="btn btn-info" value="Add New">
-
-              </form>
-				</br></br>
-
-              <form action="<?php echo site_url('Newpage/template');?>" method="post">
-
-				Upload File :  <input type="file" name="file" value="Upload your file"> 
-				
-                    </br></br>
+             </div>
+        
+            
+            <table class="table table-striped table-hover">
+            <form action="<?php echo site_url('Newpage/lii');?>" method="post">
                 Templates :
                     </br></br>
-                    <input type="radio"  name="surat_cuti" id="temp" >
-                        <label for ="t"> Surat Cuti </label></br>
+                    <input type="radio"  name="slia" id="slia" >
+                        <label for ="fyp"> Borang SLI-01</label></br>
 
-                    <input type="radio"  name="surat_fyp" >
-                        <label for ="t"> Surat FYP </label></br>
+                    <input type="radio"  name="slib" id="slib">
+                        <label for ="fyp"> Borang SLI-03</label></br>
 
-                    <input type="radio"  name="surat_li" >
-                        <label for ="t"> Surat Latihan Industri (LI) </label></br>
-
-                    <input type="radio"  name="surat_lantik" >
-                        <label for ="t"> Surat Perlantikan </label></br>
-                    </br>
-                    <!--<input type="submit" name="view" class="btn btn-info" value="View">-->
+                    <br><br>
                     <input type="submit" name="use" class="btn btn-info" value="Use">
 
             </form>
-
-              </table>
-
-
+            </table>
+            </div>
+        </div>
 </body>
 </html>

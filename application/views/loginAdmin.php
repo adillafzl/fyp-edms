@@ -32,14 +32,14 @@
 		padding: 100px 0 30px;		
 	}
 	.login-form form {
-		color: #7a7a7a;
-		border-radius: 2px;
-    	margin-bottom: 15px;
-        font-size: 13px;
-        background: #ececec;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-        padding: 30px;	
-        position: relative;	
+		color: #999;
+		border-radius: 10px;
+		margin-bottom: 15px;
+		background: #fff;
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		padding: 30px;
+		position: relative;
+		font-size: 13px;
     }
 	.login-form h2 {
 		font-size: 22px;
@@ -71,6 +71,11 @@
 		background: #70c5c0;
 		border: none;
 		margin-bottom: 20px;
+		color: #fff !important;
+		border-radius: 4px;
+		text-decoration: none;
+		transition: all 0.4s;
+		line-height: normal;
     }
 	.login-form .btn:hover, .login-form .btn:focus {
 		background: #50b8b3;
@@ -94,13 +99,13 @@
 </head>
 <body>
 <div class="login-form">
-    <form action=" <?php echo site_url('Loginadmin/loginprocess') ?>" method="post">
+    <form action=" <?php echo site_url('Account/process_login') ?>" method="post">
 		<div class="avatar">
 			<img src="home.png" alt="Avatar">
 		</div>
         <h2 class="text-center">Admin Login</h2>   
         <div class="form-group">
-        	<input type="text" class="form-control" name="email" placeholder="Email" required="required">
+        	<input type="text" class="form-control" name="staffid" placeholder="Staff ID" required="required">
         </div>
 		<div class="form-group">
             <input type="password" class="form-control" name="password" placeholder="Password" required="required">
@@ -113,7 +118,7 @@
             <a href="#" class="pull-right">Forgot Password?</a>
         </div>
     </form>
-    <p class="text-center small">Don't have an account? <a href="#">Home</a></p>
+    <p class="text-center small">Don't have an account? <a href="/home">Home</a></p>
 </div>
 </body>
 </html>      

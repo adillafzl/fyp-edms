@@ -17,8 +17,6 @@ $mpdf = new \Mpdf\Mpdf();
 
 $data = "";
 
-$data .= "<h1>PDF</h1>";
-
 $data .= $namerec.'<br>';
 
 $data .= $addrec.'<br>';

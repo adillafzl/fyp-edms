@@ -1,11 +1,12 @@
 </html><!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Dashboard</title>
+  <title>Documents</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
@@ -116,6 +117,24 @@
 	
 </style>
 
+<!--
+<script>
+$(document).ready(function(){
+	$('[data-toggle="tooltip"]').tooltip();
+});
+
+$('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+</script>
+-->
+
 <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #191970">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -141,40 +160,68 @@
     
 
 
-<table class="table table-striped table-hover">
-                  <thead>
-                      <tr>
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Document Name</th>
+        <th>Signed</th>
+        <th>Pending</th>
+        <th>Actions</th>       
+      </tr>
+    </thead>
+    <tbody>
+      <?php
+        $docid = 1;
+        foreach ($result as $r) { ?>
 
-                          <th>ID</th>
-                          <th>Document Name</th>
-                          <th>Signed</th>
-						  <th>Pending</th>
-                          <th>Actions</th>
-                         
-                      </tr>
-                  </thead>
-
-				  <tbody>
-                  <?php
-                    $docid = 1;
-                    foreach ($result as $r) { ?>
-
-                    <tr>
-                        <td> <?php echo $docid++ ?> </td>
-                        <td> <?php echo $r['docname'] ?> </td>
-                        <td> </td>
-						<td><span class="glyphicon glyphicon-ok-circle"> </td>
-                        <td>
-						<a href="#"><span class="glyphicon glyphicon-heart-empty"></span></a> &nbsp;
-						<a href="<?php echo site_url('checkingmail.php') ?>"><span class="glyphicon glyphicon-send"></span></a> &nbsp;
-						<a href="try" download><span class="glyphicon glyphicon-download-alt"></span></a> &nbsp;
-						<a href="<?php echo site_url('check') ?>"><span class="glyphicon glyphicon-qrcode"></span></a> &nbsp;
-                        </td>
-                    </tr>
-                    <?php } ?>
-                  </tbody>
-</table>
+        <tr>
+          <td> <?php echo $docid++ ?> </td>
+          <td> <?php echo $r['docname'] ?> </td>
+          <td> </td>
+          <td><span class="glyphicon glyphicon-ok-circle"> </td>
+          <td>
+            <a href="#" class="settings" title="Favourite" data-toggle="tooltip"><i class="material-icons">favorite</i></a> &nbsp;
+            <a href="<?php echo site_url('Emailform') ?>" class="settings" title="Send eMail" data-toggle="tooltip"><i class="material-icons">email</i></a> &nbsp;
+            <a href="try" download  class="settings" title="Download" data-toggle="tooltip"><i class="material-icons">file_download</i></a> &nbsp;
+            <a href="<?php echo site_url('check') ?>" class="settings" title="Check" data-toggle="tooltip"><i class="material-icons">check</i></a> &nbsp;
+          </td>
+        </tr>
+      <?php } ?>
+   </tbody>
+  </table>
 </div>
 
 </body>
 </html>
+
+<!--
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+-->

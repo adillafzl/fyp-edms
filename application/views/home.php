@@ -15,6 +15,12 @@
 
   <style type="text/css">
   
+	.name{
+		text-align: center;
+    	font-weight: bold;
+    	font-size: 16px;
+		color: #507cc0;
+	}
     
 	body {
 		color: #fff;
@@ -160,15 +166,16 @@
 			<img src="home.png" alt="Avatar" />
 		</div>
         </br></br>
-        <h4 class="text-center">Login as ;</h4>
+        <h4 class="text-center">Login as :</h4>
         </br>
 		<div class="social-btn text-center">
 			<a href="index.php/Loginadmin/index" class="btn btn-primary btn-block btn-lg">Admin</a>
-			<a href="index.php/Loginadmin/" class="btn btn-primary btn-block btn-lg">Lecturer</b></a>
+			<a href="index.php/Loginlecturer/index" class="btn btn-primary btn-block btn-lg">Lecturer</b></a>
 		</div>
 
-    <p class="text-center small">Don't have an account? <a href="index.php/Register/index"><b>Sign up here!</b></a></p>
+    <p class="text-center small">Don't have an account? <a href="index.php/Register/index" style="color: #507cc0"><b>Sign up here!</b></a></p>
 </div>
+<div class="name">NETDOC.com : Online Letter Generation System</div>
 </div>
 </body>
 </html>

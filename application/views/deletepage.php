@@ -24,7 +24,7 @@
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      <li><a href="<?php echo site_url('home') ?>"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
     </ul>
   </div>
 </nav>
@@ -211,7 +211,7 @@
                     <tr>
                         <td> <?php echo $docid++ ?> </td>
                         <td> <?php echo $r['docname'] ?> </td>
-                        <td> </td>
+                        <td> <?php echo $r['date'] ?></td>
                         <td>
                             <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="" data-original-title="Delete"></i></a>
                         </td>

@@ -10,11 +10,11 @@
 
 <style>
     body, html {
-        height: 100%;
-        background-image: url('cloudpink.jpg');
+        /* height: 100%;
+        background-image: url('cloudpink.jpg'); */
     }
     .bg {
-        background-image: url("cloudpink.jpg");
+        background-image: url('cloudpink.jpg');
         height: 100%;
         background-position: center;
         background-repeat: repeat-y;
