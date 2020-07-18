@@ -89,7 +89,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url','html');
+$autoload['helper'] = array('url','html','file','string','form');
 
 /*
 | -------------------------------------------------------------------
@@ -132,4 +132,8 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array('Model_registerc', 'Model_displayuser', 'Model_login','Model_adddoc');
+$autoload['model'] = array('Model_registerc', 'Model_displayuser', 'Model_login','Model_adddoc','Model_account',
+                            'Model_email','Model_suratcuti','Model_mca','Model_newpage');
+
+$autoload['helper'] = array('url');
+require_once BASEPATH . '/helpers/url_helper.php';
