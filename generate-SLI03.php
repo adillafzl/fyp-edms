@@ -6,16 +6,14 @@ use Spipu\Html2Pdf\Html2Pdf;
 use Spipu\Html2Pdf\Html2PdfException;
 use Spipu\Html2Pdf\Html2PdfExceptionFormatter;
 
-/*
-if (!isset($_POST['data'])) {
-    header("location: index2.php");
-die();
-}
-*/
-
-//$data = isset($_POST['data']);
-
-$data = (isset($_POST['data']) ? $_POST['data'] : '');
+$name = (isset($_POST['name']) ? $_POST['name'] : '');
+$studid = (isset($_POST['studid']) ? $_POST['studid'] : '');
+$nric = (isset($_POST['nric']) ? $_POST['nric'] : '');
+$program = (isset($_POST['program']) ? $_POST['program'] : '');
+$uni = (isset($_POST['uni']) ? $_POST['uni'] : '');
+$place = (isset($_POST['place']) ? $_POST['place'] : '');
+$datea = (isset($_POST['datea']) ? $_POST['datea'] : '');
+$dateb = (isset($_POST['dateb']) ? $_POST['dateb'] : '');
 
 try {
     $html2pdf = new HTML2PDF('P','A4','en',true,'UTF-8',[0,0,0,0]);

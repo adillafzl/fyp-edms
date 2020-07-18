@@ -110,16 +110,16 @@ PELANTIKAN SEBAGAI PEMERIKSA PROJEK ILMIAH TAHUN AKHIR SARJANA MUDA SAINS KOMPUT
     <th>SESI 2019/2020</th>
   </tr>
   <tr>
-    <td>CSP600</td>
-    <td>1</td>
-    <td>CS230</td>
-    <td>September 2019 – Januari 2020</td>
+  <td><?php echo nl2br($code); ?></td>
+    <td><?php echo nl2br($sem); ?></td>
+    <td><?php echo nl2br($prog); ?></td>
+    <td><?php echo nl2br($start); ?> - <?php echo nl2br($end); ?> </td>
   </tr>
   <tr>
-    <td>CSP650</td>
-    <td>2</td>
-    <td>CS230</td>
-    <td>Februari 2020 – Julai 2020</td>
+    <td><?php echo nl2br($code1); ?></td>
+    <td><?php echo nl2br($sem1); ?></td>
+    <td><?php echo nl2br($prog); ?></td>
+    <td><?php echo nl2br($start1); ?> - <?php echo nl2br($end1); ?> </td>
   </tr>
     </table>
 </div>

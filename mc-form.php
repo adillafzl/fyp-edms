@@ -3,10 +3,12 @@
 <head>
 
 <meta charset="UTF-8">
+
 <title> Generate PDF </title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="shortcut icon" href="/favicon.ico">
+
 
 <style>
     body, html {
@@ -32,11 +34,11 @@
     <hr>
 
     <form action="generate-mc.php" method="post">
-        <label> Enter full name : </label>
-        <textarea name="fname" id="fname" class="form-control" style="border-radius: 0px;" cols="1" rows="1" > </textarea> 
+    <label> Enter full name : </label>
+        <textarea name="fullname" id="fullname" class="form-control" style="border-radius: 0px;" cols="1" rows="1" > </textarea> 
         <br>
         <label> Date of absence : </label>
-        <textarea name="datea" id="datea" class="form-control" style="border-radius: 0px;" cols="1" rows="1" > </textarea> 
+        <textarea name="doa" id="doa" class="form-control" style="border-radius: 0px;" cols="1" rows="1" > </textarea> 
         <br>
         <label> Type of illness : </label>
         <textarea name="illness" id="illness" class="form-control" style="border-radius: 0px;" cols="1" rows="1" > </textarea> 
@@ -44,8 +46,9 @@
         <label> Enter Hospital/Clinic's name : </label>
         <textarea name="hosp" id="hosp" class="form-control" style="border-radius: 0px;" cols="1" rows="1" > </textarea> 
         <br>
+
         <label> MC attachment: </label> <br>
-        <input type="file" id="data" name="data">
+        <input type="file" id="mc" name="mc">
         <br><br>
         <button type="submit" class="btn btn-md btn-outline-primary btn=block" style=""> Generate PDF </button>
     </form>
@@ -53,4 +56,4 @@
     </div>
     </div>
 </body>
-</html
+</html>

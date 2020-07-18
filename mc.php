@@ -84,12 +84,12 @@ a {
 <br><br><br>
 
 <div class="note" style="text-align: left;">
-    Merujuk perkara di atas, saya <?php echo nl2br($fname); ?> ingin menjelaskan ketidakhadiran saya pada <?php echo nl2br($datea); ?> lalu.
+    Merujuk perkara di atas, saya <?php echo nl2br($fullname); ?> ingin menjelaskan ketidakhadiran saya pada <?php echo nl2br($doa); ?> lalu.
 </div>
 <br>
 
 <div class="note" style="text-align: left;">
-    2. Untuk pengetahuan tuan, saya mengalami <?php echo nl2br($illness); ?> pada <?php echo nl2br($datea); ?> 
+    2. Untuk pengetahuan tuan, saya mengalami <?php echo nl2br($illness); ?> pada <?php echo nl2br($doa); ?> 
     dan telah berjumpa doktor di <?php echo nl2br($hosp); ?> untuk mendapat rawatan. Atas nasihat doktor, 
     saya mengambil keputusan untuk berehat di rumah.
 </div>
@@ -97,7 +97,7 @@ a {
 
 <div class="note" style="text-align: left;">
     3. Dengan ini, saya sertakan sijil cuti sakit yang diberikan doktor bagi membolehkan saya bercuti.
-    <?php echo nl2br($data); ?>
+    <?php echo nl2br($mc); ?>
 </div>
 <br>
 

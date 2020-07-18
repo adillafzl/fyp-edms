@@ -1,17 +1,20 @@
 
 <?php
-$to_email = "fypfarah@gmail.com";
-$subject = "PHP Email with Attachment by Farahhae";
-$body = "PHP Email with Attachment by Farahhae
-    This email is sent from the PHP script with attachment.";
-$headers = "From: XAMPP server";
+$to_email =$_POST["email"];
+$subject = "NETDOC.COM notification";
+$body = "You may have new document to sign. Please check your inbox by click this link
+https://fypfarah.herokuapp.com/.";
+$headers = "From: NETDOC.COM";
 
 // Attachment file
 $file = "downloads/TestPlan.doc";
 //$attributes (mixed) – HTML attributes
 
 if (mail($to_email, $subject, $body, $headers,$file)) {
-    echo "Email successfully sent to $to_email...";
-} else {
+    $message = "Email successfully sent to $to_email";
+            echo "<script type='text/javascript'>alert('$message');</script>";
+            header("Location: documents");
+} 
+else {
     echo "Email sending failed...";
 }
