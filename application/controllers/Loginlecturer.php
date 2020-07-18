@@ -6,7 +6,7 @@
 
       }
       public function loginl() {
-         $this->load->view('loginLecturer');
+         $this->load->view('dashboard');
 
       }
 

@@ -2,7 +2,7 @@
    class Register extends CI_Controller {
 
       public function index() {
-         $this->load->view('register(1)');
+         $this->load->view('registerstaff');
       }
 
       public function home() {
@@ -10,19 +10,16 @@
      }
 
       public function insert() {
-        $staffid = $_POST['staffid'];
-        $firstname = $_POST['firstname'];
-        $lastname = $_POST['lastname'];
-        $icnum = $_POST['icnum'];
+        $userid = $_POST['userid'];
+        $username = $_POST['username'];
+        $phone = $_POST['phone'];
         $email = $_POST['email'];
-        $phoneno = $_POST['phoneno'];
         $password = $_POST['password'];
 
-        $data = array('staffid'=> $staffid, 'firstname' => $firstname, 'lastname'=> $lastname,
-                      'icnum'=> $icnum, 'email'=> $icnum, 'email'=> $email,
-                      'phoneno'=> $phoneno, 'password'=> $password);
+        $data = array('userid'=> $userid, 'username' => $username, 'phone'=> $phone,
+                      'email'=> $email,'password'=> $password);
 
-        $insert = $this-> Model_registerc->insertData('register',$data);
+        $insert = $this-> Model_registerc->insertData('admin',$data);
         if($insert > 0) {
           echo 'Data successfully added';
           redirect('Register/index');
@@ -32,6 +29,29 @@
         }
 
         }
+        
+
+        public function addStaff() {
+          $staffid = $_POST['staffid'];
+          $fname = $_POST['fname'];
+          $lname = $_POST['lname'];
+          $phone = $_POST['phone'];
+          $address = $_POST['address'];
+          $password = $_POST['password'];
+  
+          $data = array('staffid'=> $staffid, 'fname' => $fname, 'lname'=> $lname,
+                        'phone'=> $phone,'address'=> $address,'password'=> $password);
+  
+          $insert = $this-> Model_registerc->insertData('staff',$data);
+          if($insert > 0) {
+            echo 'Data successfully added';
+            redirect('home');
+          }
+          else {
+            echo 'Error';
+          }
+  
+          }
         }
 
 ?>

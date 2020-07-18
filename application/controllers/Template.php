@@ -3,9 +3,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Template extends CI_Controller {
 
-	public function index()
+	public function fyp()
 	{
-		$this->load->view('template');
+		$this->load->view('newfyppage');
+	}
+
+	public function li()
+	{
+		$this->load->view('newlipage');
 	}
 
 }
