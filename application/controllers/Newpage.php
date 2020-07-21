@@ -80,13 +80,13 @@ class Newpage extends CI_Controller {
 
     if($fypA == true){
 //       header("Location: http://localhost/fyp/fypA-form.php/");
-	    redirect('template/fyp/fypA-form.php');
+	    redirect('fypA-form.php');
     }
 
     
     elseif($fypB == true){
 //       header("Location: http://localhost/fyp/fypB-form.php/");
-	    redirect('template/fyp/fypB-form.php');
+	    redirect('fypB-form.php');
     }
   }
 
@@ -102,13 +102,13 @@ class Newpage extends CI_Controller {
 
     if($slia == true){
 //       header("Location: http://localhost/fyp/SLI01-form.php/");
-	    redirect('template/fyp/SLI01-form.php');
+	    redirect('SLI01-form.php');
     }
 
     
     elseif($slib == true){
 //       header("Location: http://localhost/fyp/SLI03-form.php/");
-	    redirect('template/fyp/SLI03-form.php');
+	    redirect('SLI03-form.php');
     }
   }
 
