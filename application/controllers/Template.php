@@ -5,7 +5,7 @@ class Template extends CI_Controller {
 
 	public function fyp()
 	{
-		$this->load->view('fypA-form.php');
+		$this->load->view('newfyppage');
 	}
 
 	public function li()
