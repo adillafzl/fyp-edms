@@ -49,16 +49,19 @@ class Newpage extends CI_Controller {
 
            
             if($surat_cuti == true){
-              header("Location: http://localhost/fyp/suratcuti/");
+              // header("Location: http://localhost/fyp/suratcuti/");
+              redirect('suratcuti');
             }
 
             
             elseif($surat_fyp == true){
-              header("Location: http://localhost/fyp/template/fyp/");
+              // header("Location: http://localhost/fyp/template/fyp/");
+              redirect('template/fyp');
             }
 
             elseif($surat_li == true){
-              header("Location: http://localhost/fyp/template/li");
+              // header("Location: http://localhost/fyp/template/li");
+              redirect('template/li');
             }
   
 
@@ -76,12 +79,14 @@ class Newpage extends CI_Controller {
     $newpage = $this -> Model_newpage -> insertPage('temp_fyp',$data);
 
     if($fypA == true){
-      header("Location: http://localhost/fyp/fypA-form.php/");
+//       header("Location: http://localhost/fyp/fypA-form.php/");
+	    redirect('template/fyp/fypA-form.php');
     }
 
     
     elseif($fypB == true){
-      header("Location: http://localhost/fyp/fypB-form.php/");
+//       header("Location: http://localhost/fyp/fypB-form.php/");
+	    redirect('template/fyp/fypB-form.php');
     }
   }
 
@@ -96,12 +101,14 @@ class Newpage extends CI_Controller {
     $newpage = $this -> Model_newpage -> insertPage('temp-li',$data);
 
     if($slia == true){
-      header("Location: http://localhost/fyp/SLI01-form.php/");
+//       header("Location: http://localhost/fyp/SLI01-form.php/");
+	    redirect('template/fyp/SLI01-form.php');
     }
 
     
     elseif($slib == true){
-      header("Location: http://localhost/fyp/SLI03-form.php/");
+//       header("Location: http://localhost/fyp/SLI03-form.php/");
+	    redirect('template/fyp/SLI03-form.php');
     }
   }
 
