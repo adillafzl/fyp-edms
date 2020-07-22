@@ -20,6 +20,7 @@ $doa = (isset($_POST['doa']) ? $_POST['doa'] : '');
 $illness = (isset($_POST['illness']) ? $_POST['illness'] : '');
 $hosp = (isset($_POST['hosp']) ? $_POST['hosp'] : '');
 $mc = (isset($_POST['mc']) ? $_POST['mc'] : '');
+$img = (isset($_POST['img']) ? $_POST['img'] : '');
 
 try {
     $html2pdf = new HTML2PDF('P','A4','en',true,'UTF-8',[0,0,0,0]);
