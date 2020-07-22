@@ -9,8 +9,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="shortcut icon" href="/favicon.ico">
 	
-<link rel="stylesheet" href="<?=base_url('/assests/css/signature-pad.css');?>">
-
 
 <style>
     body, html {
@@ -51,12 +49,10 @@
         <label> MC attachment: </label> <br>
         <input type="file" id="mc" name="mc">
         <br>
-		<label> Signature: </label> <br>
-            <div id="signature-pad" class="signature-pad">
-                <div class="signature-pad--body">
-                    <canvas></canvas>
-                 </div>
-            </div>
+	
+        <label for="img">Signature :</label> <br>
+        <input type="file" id="img" name="img" accept="image/*">
+        <br>
         <br>
 		<br>
         <button type="submit" class="btn btn-md btn-outline-primary btn=block" style=""> Generate PDF </button>
@@ -65,8 +61,6 @@
     </div>
     </div>
 
-<script src="<?=base_url('/assests/js/signature_pad.js');?>"></script>
-<script src="<?=base_url('/assests/js/app.js');?>"></script>
 	
 </body>
 </html>
