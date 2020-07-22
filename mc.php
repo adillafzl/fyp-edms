@@ -110,4 +110,18 @@ a {
     Sekian terima kasih.
 </div>
 <br>
+	<br>
+<br>
+<br>
+<div class="note" style="text-align: left;">
+    Yang benar,
+</div>
+<br>
+<br>
+<div class="note" style="text-align: left;">
+<?php echo nl2br($img); ?> <br>
+<?php echo nl2br($fullname); ?>
+
+</div>
+<br>
 </page>
