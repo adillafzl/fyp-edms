@@ -51,7 +51,7 @@
         <br>
 	
         <label for="img">Signature :</label> <br>
-        <input type="file" id="img" name="img" accept="image/*">
+        <input type="image" id="img" name="img" accept="image/*" src="signature.png">
         <br>
         <br>
 		<br>
