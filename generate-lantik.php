@@ -8,10 +8,13 @@ use Spipu\Html2Pdf\Html2PdfExceptionFormatter;
 
 
 $fullname = (isset($_POST['fullname']) ? $_POST['fullname'] : '');
-$doa = (isset($_POST['doa']) ? $_POST['doa'] : '');
-$illness = (isset($_POST['illness']) ? $_POST['illness'] : '');
-$hosp = (isset($_POST['hosp']) ? $_POST['hosp'] : '');
-$mc = (isset($_POST['mc']) ? $_POST['mc'] : '');
+$position = (isset($_POST['position']) ? $_POST['position'] : '');
+$jawatan = (isset($_POST['jawatan']) ? $_POST['jawatan'] : '');
+$jabatan = (isset($_POST['jabatan']) ? $_POST['jabatan'] : '');
+$program = (isset($_POST['program']) ? $_POST['program'] : '');
+$start = (isset($_POST['start']) ? $_POST['start'] : '');
+$end = (isset($_POST['end']) ? $_POST['end'] : '');
+$lokasi = (isset($_POST['lokasi']) ? $_POST['lokasi'] : '');
 $img = (isset($_POST['img']) ? $_POST['img'] : '');
 
 function do_upload(){
@@ -31,7 +34,7 @@ try {
     $html2pdf = new HTML2PDF('P','A4','en',true,'UTF-8',[0,0,0,0]);
     $html2pdf->pdf->SetDisplayMode('fullpage');
     ob_start();
-    include "mc.php";
+    include "lantik.php";
     $content = ob_get_clean();
     $html2pdf->writeHTML($content);
     error_reporting(0);

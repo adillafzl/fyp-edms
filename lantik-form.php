@@ -29,26 +29,34 @@
     <div class="row">
     <div class="col-md-6 offset-md-3" style="background: white; padding:20px; box-shadow: 10px 10px 5px #888888; margin-top:30px;">
 
-    <h4> Template : MC A</h4>
+    <h4> Template : SURAT PELANTIKAN</h4>
     <p style="font-style: italic;"> Please fill in details </p>
     <hr>
 
-    <form action="generate-mc.php"  method="post">
-    <label> Enter full name : </label>
+    <form action="generate-lantik.php"  method="post">
+    <label> Nama Penuh : </label>
         <textarea name="fullname" id="fullname" class="form-control" style="border-radius: 0px;" cols="1" rows="1" > </textarea> 
         <br>
-    <label> Date of absence : </label>
-        <textarea name="doa" id="doa" class="form-control" style="border-radius: 0px;" cols="1" rows="1" > </textarea> 
+    <label> Jawatan : </label>
+        <textarea name="position" id="position" class="form-control" style="border-radius: 0px;" cols="1" rows="1" > </textarea> 
         <br>
-    <label> Type of illness : </label>
-        <textarea name="illness" id="illness" class="form-control" style="border-radius: 0px;" cols="1" rows="1" > </textarea> 
+    <label> Dilantik Sebagai : </label>
+        <textarea name="jawatan" id="jawatan" class="form-control" style="border-radius: 0px;" cols="1" rows="1" > </textarea> 
         <br>
-    <label> Enter Hospital/Clinic's name : </label>
-        <textarea name="hosp" id="hosp" class="form-control" style="border-radius: 0px;" cols="1" rows="1" > </textarea> 
+    <label> Dilantik Oleh : </label>
+        <textarea name="jabatan" id="jabatan" class="form-control" style="border-radius: 0px;" cols="1" rows="1" > </textarea> 
         <br>
-
-    <label> MC attachment: </label> <br>
-        <input type="file" id="mc" name="mc">
+    <label> Program : </label>
+        <textarea name="program" id="program" class="form-control" style="border-radius: 0px;" cols="1" rows="1" > </textarea> 
+        <br>
+    <label> Tarikh Mula : </label>
+        <textarea name="start" id="start" class="form-control" style="border-radius: 0px;" cols="1" rows="1" > </textarea> 
+        <br>
+    <label> Tarikh Akhir : </label>
+        <textarea name="end" id="end" class="form-control" style="border-radius: 0px;" cols="1" rows="1" > </textarea> 
+        <br>
+    <label> Lokasi : </label>
+        <textarea name="lokasi" id="lokasi" class="form-control" style="border-radius: 0px;" cols="1" rows="1" > </textarea> 
         <br>
 
     <label for="img">Signature :</label> <br>

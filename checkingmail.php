@@ -7,10 +7,10 @@ https://fypfarah.herokuapp.com/.";
 $headers = "From: NETDOC.COM";
 
 // Attachment file
-//$file = "downloads/TestPlan.doc";
+$file = "downloads/TestPlan.doc";
 //$attributes (mixed) – HTML attributes
 
-if (mail($to_email, $subject, $body, $headers)) {
+if (mail($to_email, $subject, $body, $headers,$file)) {
     $message = "Email successfully sent to $to_email";
             echo "<script type='text/javascript'>alert('$message');</script>";
             //header("Location: documents");

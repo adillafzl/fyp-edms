@@ -74,35 +74,45 @@ a {
 </div>
 -->
 <div class="note" style="text-align: left;">
-   Tuan/Puan,
+<?php echo nl2br($fullname); ?> <br>
+<?php echo nl2br($position); ?> <br>
+UiTM Cawangan Melaka <br>
+Kampus Jasin <br>
+77300 Merlimau, Melaka
+</div>
+<br><br>
+
+<div class="note" style="text-align: left;">
+   Tuan,
 </div>
 <br><br><br>
 
 <div class="title" style="text-align: left;">
-    PERKARA : TIDAK HADIR BEKERJA
+    PERLANTIKAN SEBAGAI <?php echo nl2br($jawatan); ?> BAGI PROGRAM <?php echo nl2br($program); ?>
 </div>
 <br><br><br>
 
 <div class="note" style="text-align: left;">
-    Merujuk perkara di atas, saya <?php echo nl2br($fullname); ?> ingin menjelaskan ketidakhadiran saya pada <?php echo nl2br($doa); ?> lalu.
+    Dengan segala hormatnya perkara atas dirujuk.
 </div>
 <br>
 
 <div class="note" style="text-align: left;">
-    2. Untuk pengetahuan tuan, saya mengalami <?php echo nl2br($illness); ?> pada <?php echo nl2br($doa); ?> 
-    dan telah berjumpa doktor di <?php echo nl2br($hosp); ?> untuk mendapat rawatan. Atas nasihat doktor, 
-    saya mengambil keputusan untuk berehat di rumah.
+    2. Sukacita dimaklumkan bahawa <?php echo nl2br($jabatan); ?> akan menganjurkan <?php echo nl2br($program); ?> pada 
+    <?php echo nl2br($start); ?> hingga <?php echo nl2br($end); ?> bertempat di <?php echo nl2br($lokasi); ?>
 </div>
 <br>
 
 <div class="note" style="text-align: left;">
-    3. Dengan ini, saya sertakan sijil cuti sakit yang diberikan doktor bagi membolehkan saya bercuti.
-    <?php echo nl2br($mc); ?>
+    3. Sehubungan dengan itu, <?php echo nl2br($jabatan); ?> dengan segala hormatnya melantik tuan sebagai <?php echo nl2br($jawatan); ?>
+    bagi program tersebut.
 </div>
 <br>
 
 <div class="note" style="text-align: left;">
-    Segala perhatian serta pertimbangan yang sewajarnya dari pihak tuan amat dihargai.
+    4. Semoga sumbangan, komitmen dan kerjasama yang diberikan oleh tuan dapat melancarkan serta mencapai objektif majlis. Bersama ini disertakan
+    aturcara majlis.
+
 </div>
 <br>
 
@@ -119,7 +129,6 @@ a {
 <br>
 <div class="note" style="text-align: left;">
 <?php echo nl2br($img); ?> <br>
-<?php echo nl2br($fullname); ?>
 
 </div>
 <br>
