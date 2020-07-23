@@ -102,7 +102,7 @@ td{
     </tr>
     <tr>
     <td>
-        <button style="background-color: #999999" class="button button1" onclick="location.href='<?php echo base_url();?>displayuser'" >
+        <button style="background-color: #999999" class="button button1" onclick="location.href='<?php echo site_url('Displayuser') ?>'" >
         <span class="dashboard-icon glyphicon glyphicon-cog"></span></br></br> SETTING
         </button>
       </td>
