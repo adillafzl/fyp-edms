@@ -221,6 +221,16 @@ body {
 				<input type="text" class="form-control" name="staffid" placeholder="Staff ID" required="required">
 			</div>
         </div>
+		<div class="form-group">
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<span class="input-group-text">
+						<span class="fa fa-envelope"></span>
+					</span>
+				</div>
+				<input type="text" class="form-control" name="email" placeholder="Email" required="required">
+			</div>
+        </div>
         <div class="form-group">
 			<div class="input-group">
 				<div class="input-group-prepend">
