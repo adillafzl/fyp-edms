@@ -16,6 +16,11 @@ class Newpage extends CI_Controller {
   public function li()
 	{
 		$this->load->view('newlipage');
+  }
+  
+  public function lantik()
+	{
+		$this->load->view('newlantikpage');
 	}
 
 	public function insert() {
@@ -42,7 +47,7 @@ class Newpage extends CI_Controller {
         $surat_li = $_POST['surat_li'];
         $surat_lantik = $_POST['surat_lantik'];
         
-        $data = array('surat_cuti'=> $surat_cuti,'surat_fyp'=> $surat_fyp);
+        $data = array('surat_cuti'=> $surat_cuti,'surat_fyp'=> $surat_fyp, 'surat_li'=> $surat_li,'surat_lantik'=> $surat_lantik);
         
         $this -> load -> model("Model_newpage");
         $newpage = $this -> Model_newpage -> insertPage('temp_surat',$data);
@@ -63,6 +68,11 @@ class Newpage extends CI_Controller {
               // header("Location: http://localhost/fyp/template/li");
               redirect('template/li');
             }
+
+            elseif($surat_lantik == true){
+              header("Location: http://localhost/fyp/lantik-form.php");
+              //redirect('template/lantik');
+            }
   
 
 
@@ -79,14 +89,12 @@ class Newpage extends CI_Controller {
     $newpage = $this -> Model_newpage -> insertPage('temp_fyp',$data);
 
     if($fypA == true){
-//       header("Location: http://localhost/fyp/fypA-form.php/");
-	    redirect('fypA-form.php');
+      header("Location: http://localhost/fyp/fypA-form.php/");
     }
 
     
     elseif($fypB == true){
-//       header("Location: http://localhost/fyp/fypB-form.php/");
-	    redirect('fypB-form.php');
+      header("Location: http://localhost/fyp/fypB-form.php/");
     }
   }
 
@@ -101,15 +109,29 @@ class Newpage extends CI_Controller {
     $newpage = $this -> Model_newpage -> insertPage('temp-li',$data);
 
     if($slia == true){
-//       header("Location: http://localhost/fyp/SLI01-form.php/");
-	    redirect('SLI01-form.php');
+      header("Location: http://localhost/fyp/SLI01-form.php/");
     }
 
     
     elseif($slib == true){
-//       header("Location: http://localhost/fyp/SLI03-form.php/");
-	    redirect('SLI03-form.php');
+      header("Location: http://localhost/fyp/SLI03-form.php/");
     }
+  }
+
+  public function lantikk() {
+    
+    $slia = $_POST['lantikA'];
+    //$slib = $_POST['slib'];
+
+    $data = array('lantikA'=> $lantikA);
+
+    $this -> load -> model("Model_newpage");
+    $newpage = $this -> Model_newpage -> insertPage('temp-lantik',$data);
+
+    if($lantikA == true){
+      header("Location: http://localhost/fyp/lantik-form.php/");
+    }
+
   }
 
 }

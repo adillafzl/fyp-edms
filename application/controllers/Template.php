@@ -13,4 +13,9 @@ class Template extends CI_Controller {
 		$this->load->view('newlipage');
 	}
 
+	public function lantik()
+	{
+		$this->load->view('newlantikpage');
+	}
+
 }
