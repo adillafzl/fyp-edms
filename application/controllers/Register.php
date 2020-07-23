@@ -33,14 +33,13 @@
 
         public function addStaff() {
           $staffid = $_POST['staffid'];
-          $email = $_POST['email'];
           $fname = $_POST['fname'];
           $lname = $_POST['lname'];
           $phone = $_POST['phone'];
           $address = $_POST['address'];
           $password = $_POST['password'];
   
-          $data = array('staffid'=> $staffid, 'email'=> $email, 'fname' => $fname, 'lname'=> $lname,
+          $data = array('staffid'=> $staffid,'fname' => $fname, 'lname'=> $lname,
                         'phone'=> $phone,'address'=> $address,'password'=> $password);
   
           $insert = $this-> Model_registerc->insertData('staff',$data);
