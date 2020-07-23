@@ -111,7 +111,7 @@ class Newpage extends CI_Controller {
     $newpage = $this -> Model_newpage -> insertPage('temp-li',$data);
 
     if($slia == true){
-      h//eader("Location: http://localhost/fyp/SLI01-form.php/");
+      //header("Location: http://localhost/fyp/SLI01-form.php/");
 	    redirect('SLI01-form.php');
     }
 
