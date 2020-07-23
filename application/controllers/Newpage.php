@@ -70,8 +70,8 @@ class Newpage extends CI_Controller {
             }
 
             elseif($surat_lantik == true){
-              header("Location: http://localhost/fyp/lantik-form.php");
-              //redirect('template/lantik');
+              //header("Location: http://localhost/fyp/lantik-form.php");
+              redirect('lantik-form.php');
             }
   
 
@@ -89,12 +89,14 @@ class Newpage extends CI_Controller {
     $newpage = $this -> Model_newpage -> insertPage('temp_fyp',$data);
 
     if($fypA == true){
-      header("Location: http://localhost/fyp/fypA-form.php/");
+      //header("Location: http://localhost/fyp/fypA-form.php/");
+	    redirect('fypA-form.php');
     }
 
     
     elseif($fypB == true){
-      header("Location: http://localhost/fyp/fypB-form.php/");
+      //header("Location: http://localhost/fyp/fypB-form.php/");
+	    redirect('fypB-form.php');
     }
   }
 
@@ -109,12 +111,14 @@ class Newpage extends CI_Controller {
     $newpage = $this -> Model_newpage -> insertPage('temp-li',$data);
 
     if($slia == true){
-      header("Location: http://localhost/fyp/SLI01-form.php/");
+      h//eader("Location: http://localhost/fyp/SLI01-form.php/");
+	    redirect('SLI01-form.php');
     }
 
     
     elseif($slib == true){
-      header("Location: http://localhost/fyp/SLI03-form.php/");
+      //header("Location: http://localhost/fyp/SLI03-form.php/");
+	    redirect('SLI03-form.php');
     }
   }
 
